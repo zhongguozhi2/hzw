@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --add-data "player.jpg;." --add-data "background.jpg;." --icon=favicon.ico 苹苹跳跃.py

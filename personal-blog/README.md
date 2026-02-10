@@ -11,7 +11,7 @@
 ## 技术栈
 - 前端：Vue2 + Element UI + Axios（静态页，Nginx 托管）
 - 后端：Flask + Flask-SQLAlchemy + PyMySQL
-- 数据库：MySQL 8
+- 数据库：远程 MySQL（使用你提供的连接）
 - 部署：Docker Compose
 
 ## 目录结构
@@ -58,4 +58,4 @@ docker compose up -d --build
 mysql+pymysql://pay:9J7pWfK2zEDqR@47.115.225.64:3306/personal_blog?charset=utf8mb4
 ```
 
-如果要强制使用远程库，运行前把 `docker-compose.yml` 中 `backend` 的 `DATABASE_URL` 改成上述地址（并确保远端已创建 `personal_blog` 库且放行访问）。
+`docker-compose.yml` 已默认使用该远程连接，不再创建本地 MySQL 容器。请确保远端已创建 `personal_blog` 库并放行当前部署机器访问。

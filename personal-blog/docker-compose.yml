@@ -1,27 +1,12 @@
 version: '3.9'
 services:
-  mysql:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: personal_blog
-      MYSQL_USER: blog
-      MYSQL_PASSWORD: blog123
-    ports:
-      - "3307:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql
-    command: --default-authentication-plugin=mysql_native_password
-
   backend:
     build: ./backend
     environment:
-      DATABASE_URL: mysql+pymysql://blog:blog123@mysql:3306/personal_blog?charset=utf8mb4
+      DATABASE_URL: mysql+pymysql://pay:9J7pWfK2zEDqR@47.115.225.64:3306/personal_blog?charset=utf8mb4
       SECRET_KEY: super-secret-key
       ADMIN_USERNAME: admin
       ADMIN_PASSWORD: admin123
-    depends_on:
-      - mysql
     ports:
       - "5000:5000"
 
@@ -33,6 +18,3 @@ services:
       - backend
     ports:
       - "8080:80"
-
-volumes:
-  mysql_data:

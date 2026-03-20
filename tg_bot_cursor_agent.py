@@ -36,9 +36,6 @@ def _max_permission_agent_args() -> List[str]:
     对应参数来自你贴的帮助文档：
       - --yolo：等价于 --force（强制允许 commands，除非明确被拒绝）
       - --approve-mcps：自动批准所有 MCP servers
-      - --trust：在 --print/headless 模式下无提示信任当前 workspace
-      - --print：以脚本方式打印响应（同时满足 --trust 的前置条件）
-      - --output-format text：保持输出为可读文本，便于 Telegram 分段转发
     """
 
     # 只增加你要的最大执行权限参数：--yolo / --approve-mcps

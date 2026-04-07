@@ -1,0 +1,18 @@
+model_list:
+  - model_name: claude-3-opus
+    litellm_params:
+      model: moonshot/moonshot-v1-128k
+      api_base: https://api.moonshot.cn/v1
+      api_key: sk-lk9RynvNGa6hrTWivdWWlXsgq9zD9ig0epJ8EIQ0Jku1eeDf
+
+  - model_name: claude-3-sonnet
+    litellm_params:
+      model: moonshot/moonshot-v1-128k
+      api_base: https://api.moonshot.cn/v1
+      api_key: sk-lk9RynvNGa6hrTWivdWWlXsgq9zD9ig0epJ8EIQ0Jku1eeDf
+
+  - model_name: claude-sonnet-4-6
+    litellm_params:
+      model: moonshot/moonshot-v1-128k
+      api_base: https://api.moonshot.cn/v1
+      api_key: sk-lk9RynvNGa6hrTWivdWWlXsgq9zD9ig0epJ8EIQ0Jku1eeDf

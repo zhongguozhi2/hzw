@@ -64,3 +64,8 @@
 2026-03-27 08:53:06,564 [INFO] [Feishu Reply] 暂只支持文本消息，当前类型：file
 2026-03-27 08:53:07,290 [INFO] [Feishu Reply] 暂只支持文本消息，当前类型：file
 2026-03-27 08:53:09,354 [INFO] [Feishu Reply] 暂只支持文本消息，当前类型：file
+2026-03-27 18:26:10,103 [INFO] [TG Received text] 你好
+2026-03-27 18:26:10,111 [INFO] [Agent Exec] agent --yolo --approve-mcps
+2026-03-27 18:26:58,162 [INFO] [Agent Output TG] b: You've hit your usage limit for Opus You've saved $207 on API model usage this month with Pro. Switch to a different model or set a Spend Limit to continue with Opus. Your usage limits will reset when your monthly cycle ends on 4/13/2026.
+2026-03-27 18:26:58,163 [INFO] [TG Reply] b: You've hit your usage limit for Opus You've saved $207 on API model usage this month with Pro. Switch to a different model or set a Spend Limit to continue with Opus. Your usage limits will reset w...(truncated)
+2026-03-31 18:22:20,047 [INFO] [Feishu] long-connection started
